@@ -10,7 +10,7 @@ services:
         source: ./saves
         target: /saves
     environment:
-      - V_RISING_NAME=Darbro
+      - V_RISING_NAME=DarkBro
       - V_RISING_PASSW=rajamangga
       - V_RISING_SAVE_NAME=save1
       - V_RISING_PUBLIC_LIST=true
