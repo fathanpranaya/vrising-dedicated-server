@@ -1,0 +1,22 @@
+# original: https://raw.githubusercontent.com/Mephi00/v-rising-wine-docker-image/main/docker-compose.yaml
+version: '3.7'
+
+services:
+  vrising:
+    container_name: v-rising
+    image: mephi00/v-rising-wine
+    volumes:
+      - type: bind
+        source: ./saves
+        target: /saves
+    environment:
+      - V_RISING_NAME=Darbro
+      - V_RISING_PASSW=rajamangga
+      - V_RISING_SAVE_NAME=save1
+      - V_RISING_PUBLIC_LIST=true
+      - V_RISING_SETTING_PRESET=
+      - V_RISING_GAME_MODE=PvE
+      - V_RISING_CLAN_SIZE=6
+    ports:
+      - 9876:9876/udp
+      - 9877:9877/udp
